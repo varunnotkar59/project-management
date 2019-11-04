@@ -1,0 +1,187 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>project management</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <!-- endbuild -->
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/modernizr.js -->
+  <script src="scripts/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Project Management</span>
+  </nav>
+
+  <main class="container">
+
+    <section class="form-section row my-5">
+      <div class="col-md-4">
+        <h4>Branch Details</h4>
+        <p>The details regardign the branch will be collected in this section</p>
+      </div>
+      <div class="offset-md-1 col-md-7">
+        <form action="">
+          <div class="row">
+            <div class="form-group col-md-8">
+              <label for="branchName">Branch Name</label>
+              <input type="text" class="form-control" id="branchName" placeholder="Ex: Computer Science & Engineering">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="branchCode">Branch Code</label>
+              <input type="text" class="form-control" id="branchCode" placeholder="Ex: CSE">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-md-4">
+              <label for="studentIntake">Student Intake</label>
+              <input type="number" class="form-control" id="studentIntake" placeholder="Ex: 120">
+            </div>
+          </div>
+
+          <div class="form-group text-right">
+            <button class="btn btn-link" type="reset">Cancel</button>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="form-section row my-5">
+      <div class="col-md-4">
+        <h4>Faculty</h4>
+        <p>Add details of faculty member(s) of your department in this section</p>
+        <p>Want to import? <a href="#">Click here</a></p>
+      </div>
+      <div class="offset-md-1 col-md-7">
+        <form action="">
+
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Ex: John">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Ex: Doe">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="emailAddress">Email Address</label>
+              <input type="email" class="form-control" id="emailAddress" placeholder="Ex: john.doe@example.com">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="phoneNumber">Phone Number</label>
+              <input type="tel" class="form-control" id="phoneNumber" placeholder="Ex: +91 98765 43210">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="specializations">Specializations</label>
+            <input type="email" class="form-control" id="specializations" placeholder="Ex: Cryptography">
+          </div>
+
+          <div class="form-group text-right">
+            <button class="btn btn-link" type="reset">Cancel</button>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <section class="form-section row my-5">
+      <div class="col-md-4">
+        <h4>Students</h4>
+        <p>Add details of student(s) of your department in this section</p>
+        <p>Want to import? <a href="#">Click here</a></p>
+      </div>
+      <div class="offset-md-1 col-md-7">
+        <form action="">
+
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Ex: John">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Ex: Doe">
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="usn">USN Number</label>
+              <input type="text" class="form-control" id="usn" placeholder="Ex: 1AA12CS001">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="semister">Semister</label>
+              <input type="text" class="form-control" id="semister" placeholder="Ex: 1">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="section">Section</label>
+              <input type="text" class="form-control" id="section" placeholder="Ex: A">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="emailAddress">Email Address</label>
+              <input type="email" class="form-control" id="emailAddress" placeholder="Ex: john.doe@example.com">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="phoneNumber">Phone Number</label>
+              <input type="tel" class="form-control" id="phoneNumber" placeholder="Ex: +91 98765 43210">
+            </div>
+          </div>
+
+          <div class="form-group text-right">
+            <button class="btn btn-link" type="reset">Cancel</button>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function (b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+        function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+      e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+      e.src = 'https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
+  </script>
+  <!-- build:js scripts/vendor.js -->
+  <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>
