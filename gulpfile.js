@@ -164,6 +164,7 @@ function startAppServer() {
 
   watch([
     'app/*.html',
+    'app/**/*.html',
     'app/images/**/*',
     '.tmp/fonts/**/*'
   ]).on('change', server.reload);
