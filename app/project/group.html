@@ -15,12 +15,34 @@
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="../styles/main.css">
   <!-- endbuild -->
+  <!-- build:css fontawesome.css -->
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css" type="text/css" />
+  <!-- endbuild -->
   <!-- build:js scripts/modernizr.js -->
   <script src="../scripts/modernizr.js"></script>
   <!-- endbuild -->
   <style>
-    .group-list {
-      border-bottom: 1px solid #eee;
+    .description {
+      max-width: 48rem;
+    }
+
+    .team-member {
+      max-width: 40px;
+      border: 2px solid #fff;
+      margin-left: -15px;
+    }
+
+    .team-member:first-child {
+      margin-left: 0;
+    }
+
+    .btn-circle {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      padding: 0;
+      border-radius: 50%;
     }
   </style>
 </head>
@@ -28,9 +50,218 @@
 <body>
   <div class="container">
     <section class="mt-5">
-      <h1 class="text-uppercase h2">Add group</h1>
-      <div class="row">
-        <div class="col-8">
+      <h1 class="h3 my-4">
+        Groups
+        <a href="#" class="btn btn-light btn-circle shadow-sm" data-toggle="modal" data-target="#addGroup"><i class="fas fa-plus"></i></a>
+      </h1>
+
+      <di class="row">
+        <div class="col-md-6">
+
+          <div class="project-card d-flex justify-content-between py-2">
+            <div class="description">
+              <h5 class="text-primary">Group 1</h5>
+              <p>Project not allocated - <a href="#" data-toggle="modal" data-target="#projectModal">Allocate
+                  project</a></p>
+              <div class="meta d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                    data-placement="top" title="Shilpa" class="team-member rounded-circle shadow-sm">
+                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                    data-placement="top" title="Varun" class="team-member rounded-circle shadow-sm">
+                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                    data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
+                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                    data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
+                </div>
+              </div>
+            </div>
+
+            <div class="actions ml-5">
+              <a href="#" class="btn btn-light btn-circle shadow-sm mt-3" data-toggle="modal"
+                data-target="#assignGuide"><i class="fas fa-chalkboard-teacher" data-toggle="tooltip"
+                  data-placement="top" title="Assign guide"></i></a>
+              <button class="btn btn-light btn-circle shadow-sm mt-3 ml-2" data-toggle="tooltip" data-placement="top"
+                title="Edit"><i class="fas fa-pencil-alt"></i></button>
+            </div>
+          </div>
+          <hr>
+        </div>
+
+        <div class="col-md-6">
+          <div class="project-card d-flex justify-content-between py-2">
+
+            <div class="description">
+              <h5 class="text-primary">Group 2</h5>
+              <div>Project - <a href="#">Handwriting Recognition </a></div>
+              <div class="meta d-flex justify-content-between align-items-center">
+                <div class="mt-3">
+                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                    data-placement="top" title="Project guide - Shilpa" class="team-member rounded-circle shadow-sm">
+                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                    data-placement="top" title="Shilpa" class="team-member rounded-circle shadow-sm">
+                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                    data-placement="top" title="Varun" class="team-member rounded-circle shadow-sm">
+                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                    data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
+                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                    data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
+                </div>
+                <!-- <div>Guide alloted - <a href="#">Varun Umesh </a></div> -->
+              </div>
+            </div>
+
+            <div class="actions ml-5">
+              <button class="btn btn-light btn-circle shadow-sm mt-3 ml-2" data-toggle="tooltip" data-placement="top"
+                title="Edit"><i class="fas fa-pencil-alt"></i></button>
+            </div>
+          </div>
+          <hr>
+        </div>
+
+        <div class="col-md-6">
+            <div class="project-card d-flex justify-content-between py-2">
+
+              <div class="description">
+                <h5 class="text-primary">Group 2</h5>
+                <div>Project - <a href="#">Handwriting Recognition </a></div>
+                <div class="meta d-flex justify-content-between align-items-center">
+                  <div class="mt-3">
+                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                      data-placement="top" title="Project guide - Shilpa" class="team-member rounded-circle shadow-sm">
+                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                      data-placement="top" title="Shilpa" class="team-member rounded-circle shadow-sm">
+                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                      data-placement="top" title="Varun" class="team-member rounded-circle shadow-sm">
+                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                      data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
+                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                      data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
+                  </div>
+                  <!-- <div>Guide alloted - <a href="#">Varun Umesh </a></div> -->
+                </div>
+              </div>
+
+              <div class="actions ml-5">
+                <button class="btn btn-light btn-circle shadow-sm mt-3 ml-2" data-toggle="tooltip" data-placement="top"
+                  title="Edit"><i class="fas fa-pencil-alt"></i></button>
+              </div>
+            </div>
+            <hr>
+          </div>
+
+        <div class="col-md-6">
+            <div class="project-card d-flex justify-content-between py-2">
+
+              <div class="description">
+                <h5 class="text-primary">Group 2</h5>
+                <div>Project - <a href="#">Handwriting Recognition </a></div>
+                <div class="meta d-flex justify-content-between align-items-center">
+                  <div class="mt-3">
+                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                      data-placement="top" title="Project guide - Shilpa" class="team-member rounded-circle shadow-sm">
+                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                      data-placement="top" title="Shilpa" class="team-member rounded-circle shadow-sm">
+                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                      data-placement="top" title="Varun" class="team-member rounded-circle shadow-sm">
+                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                      data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
+                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                      data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
+                  </div>
+                  <!-- <div>Guide alloted - <a href="#">Varun Umesh </a></div> -->
+                </div>
+              </div>
+
+              <div class="actions ml-5">
+                <button class="btn btn-light btn-circle shadow-sm mt-3 ml-2" data-toggle="tooltip" data-placement="top"
+                  title="Edit"><i class="fas fa-pencil-alt"></i></button>
+              </div>
+            </div>
+            <hr>
+          </div>
+  </div>
+
+  </section>
+
+  <!-- Project Modal -->
+  <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel">Projects - ISE</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="project" class="sr-only sr-only-focusable">Select project</label>
+              <select class="form-control" id="project">
+                <option selected disabled value="">Select project</option>
+                <option>Project 1</option>
+                <option>Project 3</option>
+                <option>Project 4</option>
+                <option>Project 5</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Guide Modal -->
+  <div class="modal fade" id="assignGuide" tabindex="-1" role="dialog" aria-labelledby="assignGuidelLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="assignGuidelLabel">Projects - ISE</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="guide" class="sr-only sr-only-focusable">Example select</label>
+              <select class="form-control" id="guide">
+                <option selected disabled value="">Select guide</option>
+                <option>Varun Umesh</option>
+                <option>Kruthi Narayan</option>
+                <option>Charan</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End allot guide -->
+
+  <!-- Add group Modal -->
+  <div class="modal fade" id="addGroup" tabindex="-1" role="dialog" aria-labelledby="addGrouplLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addGrouplLabel">Projects - ISE</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
           <h5>Group 5</h5>
           <select class="custom-select" multiple>
             <option selected>Open this select menu</option>
@@ -40,114 +271,16 @@
             <option value="varun@zysk.in">Varun&lt;varun@zysk.in&gt;</option>
             <option value="shreenath@zysk.in">Shreenath&lt;shreenath@zysk.in&gt;</option>
           </select>
-          <button class="btn btn-primary btn-sm mt-3 float-right">Create Group</button>
         </div>
-      </div>
-
-      <h2 class="h3 my-4">Groups</h2>
-      <div class="group-list">
-        <div class="d-flex justify-content-between align-items-center py-2">
-          <div class="group-details">
-            <h5>Group 1</h5>
-            <small><a href="#" data-toggle="modal" data-target="#exampleModal">Allocate project</small>
-          </div>
-          <div class="group-members">
-            <a class="navbar-brand" href="#">
-              <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30"
-                alt="">
-            </a>
-            <a class="navbar-brand" href="#">
-              <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30"
-                alt="">
-            </a>
-            <a class="navbar-brand" href="#">
-              <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30"
-                alt="">
-            </a>
-            <a class="navbar-brand" href="#">
-              <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30"
-                alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Group 2 -->
-      <div class="group-list d-flex justify-content-between align-items-center py-2">
-        <div class="group-details">
-          <h5>Group 1</h5>
-          <small>Project allocated - <a href="#">Project Name</a></small>
-        </div>
-        <div class="group-members">
-          <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-          </a>
-          <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-          </a>
-          <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-          </a>
-          <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-          </a>
-        </div>
-      </div>
-
-      <!-- Group 3 -->
-      <div class="group-list d-flex justify-content-between align-items-center py-2">
-        <div class="group-details">
-          <h5>Group 1</h5>
-          <small>Project allocated - <a href="#">Project Name</a></small>
-        </div>
-        <div class="group-members">
-          <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-          </a>
-          <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-          </a>
-          <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-          </a>
-          <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Projects - ISE</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="exampleFormControlSelect1" class="sr-only sr-only-focusable">Example select</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option selected disabled value="">Select project</option>
-                  <option>Project 1</option>
-                  <option>Project 3</option>
-                  <option>Project 4</option>
-                  <option>Project 5</option>
-                </select>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
+  </div>
+  <!-- End add group guide -->
+
   </div>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
@@ -162,7 +295,7 @@
   </script>
   <!-- build:js scripts/vendor.js -->
   <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <!-- endbuild -->
   <!-- build:js scripts/main.js -->
   <script src="../scripts/main.js"></script>
