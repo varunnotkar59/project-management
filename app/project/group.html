@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>project management</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <!-- endbuild -->
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="../styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/modernizr.js -->
+  <script src="../scripts/modernizr.js"></script>
+  <!-- endbuild -->
+  <style>
+    .group-list {
+      border-bottom: 1px solid #eee;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section class="mt-5">
+      <h1 class="text-uppercase h2">Add group</h1>
+      <div class="row">
+        <div class="col-8">
+          <h5>Group 5</h5>
+          <select class="custom-select" multiple>
+            <option selected>Open this select menu</option>
+            <option value="shilpa@zysk.in">
+              Shilpa&lt;shilpa@zysk.in&gt;
+            </option>
+            <option value="varun@zysk.in">Varun&lt;varun@zysk.in&gt;</option>
+            <option value="shreenath@zysk.in">Shreenath&lt;shreenath@zysk.in&gt;</option>
+          </select>
+          <button class="btn btn-primary btn-sm mt-3 float-right">Create Group</button>
+        </div>
+      </div>
+
+      <h2 class="h3 my-4">Groups</h2>
+      <div class="group-list">
+        <div class="d-flex justify-content-between align-items-center py-2">
+          <div class="group-details">
+            <h5>Group 1</h5>
+            <small><a href="#" data-toggle="modal" data-target="#exampleModal">Allocate project</small>
+          </div>
+          <div class="group-members">
+            <a class="navbar-brand" href="#">
+              <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                alt="">
+            </a>
+            <a class="navbar-brand" href="#">
+              <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                alt="">
+            </a>
+            <a class="navbar-brand" href="#">
+              <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                alt="">
+            </a>
+            <a class="navbar-brand" href="#">
+              <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Group 2 -->
+      <div class="group-list d-flex justify-content-between align-items-center py-2">
+        <div class="group-details">
+          <h5>Group 1</h5>
+          <small>Project allocated - <a href="#">Project Name</a></small>
+        </div>
+        <div class="group-members">
+          <a class="navbar-brand" href="#">
+            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+          </a>
+          <a class="navbar-brand" href="#">
+            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+          </a>
+          <a class="navbar-brand" href="#">
+            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+          </a>
+          <a class="navbar-brand" href="#">
+            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+          </a>
+        </div>
+      </div>
+
+      <!-- Group 3 -->
+      <div class="group-list d-flex justify-content-between align-items-center py-2">
+        <div class="group-details">
+          <h5>Group 1</h5>
+          <small>Project allocated - <a href="#">Project Name</a></small>
+        </div>
+        <div class="group-members">
+          <a class="navbar-brand" href="#">
+            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+          </a>
+          <a class="navbar-brand" href="#">
+            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+          </a>
+          <a class="navbar-brand" href="#">
+            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+          </a>
+          <a class="navbar-brand" href="#">
+            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Projects - ISE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1" class="sr-only sr-only-focusable">Example select</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option selected disabled value="">Select project</option>
+                  <option>Project 1</option>
+                  <option>Project 3</option>
+                  <option>Project 4</option>
+                  <option>Project 5</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function (b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+        function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+      e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+      e.src = 'https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
+  </script>
+  <!-- build:js scripts/vendor.js -->
+  <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <script src="../scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>
