@@ -1,76 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>ISE - Faculty</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css /styles/vendor.css -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+      type="text/css"
+    />
+    <!-- endbuild -->
+    <!-- build:css /styles/main.css -->
+    <link rel="stylesheet" href="/styles/main.css" />
+    <!-- endbuild -->
+    <!-- build:js /scripts/modernizr.js -->
+    <script src="/scripts/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>ISE - Faculty</title>
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <!-- Place favicon.ico in the root directory -->
-  <!-- build:css styles/vendor.css -->
-  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
-  <!-- endbuild -->
-  <!-- build:css fontawesome.css -->
-  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css" type="text/css" />
-  <!-- endbuild -->
-  <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild -->
-  <!-- build:js scripts/modernizr.js -->
-  <script src="scripts/modernizr.js"></script>
-  <!-- endbuild -->
-</head>
-
-<body>
-  <div class="container">
-    <section class="mt-5">
-      <h1 class="text-uppercase h2">Faculty - ISE</h1>
-      <div class="row mt-4">
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <nav class="navbar navbar-light bg-light">
+      <span class="navbar-brand mb-0 h1">Project Management</span>
+    </nav>
+    <main class="container">
+      <h1 class="text-uppercase h2 sr-only">Faculty - ISE</h1>
+      <section class="row mt-4">
         <div class="col-md-3">
           <ul class="list-group">
             <li class="list-group-item">
-              <a href="details.html" class="text-dark">Details</a>
+              <a href="./details.html" class="text-dark">Details</a>
             </li>
             <li class="list-group-item active">
-              <a href="" class="text-white">Faculty</a>
+              <a href="./faculty.html" class="text-white">Faculty</a>
             </li>
             <li class="list-group-item">
-              <a href="students.html" class="text-dark">Students</a>
+              <a href="./students.html" class="text-dark">Students</a>
             </li>
             <li class="list-group-item">
-              <a href="" class="text-dark">Group Projects</a>
-            </li>
-            <li class="list-group-item">
-              <a href="" class="text-dark">Individual Projects</a>
+              <a href="../project/" class="text-dark">Projects</a>
             </li>
           </ul>
         </div>
 
         <div class="col-md-9 border rounded p-4">
-          <h4 class="h5">Information Science and Engineering <em> (IS&amp;E)</em></h4>
+          <h4>Information Science and Engineering <em> (IS&amp;E)</em></h4>
 
-          <table class="table table-sm ">
+          <table class="table table-responsive">
             <thead>
               <tr>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Email</th>
-                <th scope="col">Phone</th>
-                <th scope="col">Specialization</th>
-                <th scope="col">Actions</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Specialization</th>
+                <th>Actions</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Varun</td>
-                <td>Umesh</td>
+                <td>Varun Umesh</td>
                 <td>varun@zysk.com</td>
                 <td>9090909090</td>
                 <td>
-                  <span class="badge badge-info">Cryptography</span><br>
-                  <span class="badge badge-secondary">Network Security</span><br>
+                  <span class="badge badge-info">Cryptography</span><br />
+                  <span class="badge badge-secondary">Network Security</span
+                  ><br />
                   <span class="badge badge-warning">Web Development</span>
                 </td>
                 <td>
@@ -79,13 +92,14 @@
                 </td>
               </tr>
               <tr>
-                <td>Shilpa</td>
-                <td>Gowda</td>
+                <td>Shilpa Gowda</td>
                 <td>shilpa@zysk.com</td>
                 <td>8989898986</td>
                 <td>
-                  <span class="badge badge-success">Mobile Development</span><br>
-                  <span class="badge badge-secondary">Network Security</span><br>
+                  <span class="badge badge-success">Mobile Development</span
+                  ><br />
+                  <span class="badge badge-secondary">Network Security</span
+                  ><br />
                   <span class="badge badge-info">Cryptograph</span>
                 </td>
                 <td>
@@ -94,13 +108,12 @@
                 </td>
               </tr>
               <tr>
-                <td>Vishak</td>
-                <td>Gowda</td>
+                <td>Vishak Gowda</td>
                 <td>vishak@zysk.com</td>
                 <td>8989898989</td>
                 <td>
-                  <span class="badge badge-warning">Web Development</span><br>
-                  <span class="badge badge-danger">Compiler Design</span><br>
+                  <span class="badge badge-warning">Web Development</span><br />
+                  <span class="badge badge-danger">Compiler Design</span><br />
                   <span class="badge badge-info">Cryptograph</span>
                 </td>
 
@@ -111,29 +124,38 @@
               </tr>
             </tbody>
           </table>
-
         </div>
-      </div>
-    </section>
-  </div>
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-    (function (b, o, i, l, e, r) {
-    b.GoogleAnalyticsObject = l; b[l] || (b[l] =
-      function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
-      e = o.createElement(i); r = o.getElementsByTagName(i)[0];
-      e.src = 'https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
-  </script>
-  <!-- build:js scripts/vendor.js -->
-  <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <!-- endbuild -->
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
-</body>
-
+      </section>
+    </main>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] ||
+          (b[l] = function() {
+            (b[l].q = b[l].q || []).push(arguments);
+          });
+        b[l].l = +new Date();
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = "https://www.google-analytics.com/analytics.js";
+        r.parentNode.insertBefore(e, r);
+      })(window, document, "script", "ga");
+      ga("create", "UA-XXXXX-X");
+      ga("send", "pageview");
+    </script>
+    <!-- build:js /scripts/vendor.js -->
+    <script
+      type="text/javascript"
+      src="/node_modules/jquery/dist/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/node_modules/bootstrap/dist/js/bootstrap.min.js"
+    ></script>
+    <!-- endbuild -->
+    <!-- build:js /scripts/main.js -->
+    <script src="/scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>

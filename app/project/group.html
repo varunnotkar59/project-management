@@ -48,142 +48,141 @@
 </head>
 
 <body>
-  <div class="container">
-    <section class="mt-5">
-      <h1 class="h3 my-4">
-        Groups
-        <a href="#" class="btn btn-light btn-circle shadow-sm" data-toggle="modal" data-target="#addGroup"><i class="fas fa-plus"></i></a>
-      </h1>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Project Management</span>
+  </nav>
 
-      <di class="row">
-        <div class="col-md-6">
+  <section class="container mt-5">
+    <h1 class="h3 my-4">
+      Groups
+      <a href="#" class="btn btn-light btn-circle shadow-sm" data-toggle="modal" data-target="#addGroup"><i
+          class="fas fa-plus" data-toggle="tooltip" data-placement="top" title="Create group"></i></a>
+    </h1>
 
-          <div class="project-card d-flex justify-content-between py-2">
-            <div class="description">
-              <h5 class="text-primary">Group 1</h5>
-              <p>Project not allocated - <a href="#" data-toggle="modal" data-target="#projectModal">Allocate
-                  project</a></p>
-              <div class="meta d-flex justify-content-between align-items-center">
-                <div>
-                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                    data-placement="top" title="Shilpa" class="team-member rounded-circle shadow-sm">
-                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                    data-placement="top" title="Varun" class="team-member rounded-circle shadow-sm">
-                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                    data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
-                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                    data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
-                </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="project-card d-flex justify-content-between py-2">
+          <div class="description">
+            <h5 class="text-primary">Group 1</h5>
+            <p>Project not allocated -
+              <a href="#" data-toggle="modal" data-target="#projectModal">Allocate project</a>
+            </p>
+            <div class="team d-flex justify-content-between align-items-center">
+              <div>
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Shilpa" class="team-member rounded-circle shadow-sm">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Varun" class="team-member rounded-circle shadow-sm">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
               </div>
             </div>
-
-            <div class="actions ml-5">
-              <a href="#" class="btn btn-light btn-circle shadow-sm mt-3" data-toggle="modal"
-                data-target="#assignGuide"><i class="fas fa-chalkboard-teacher" data-toggle="tooltip"
-                  data-placement="top" title="Assign guide"></i></a>
-              <button class="btn btn-light btn-circle shadow-sm mt-3 ml-2" data-toggle="tooltip" data-placement="top"
-                title="Edit"><i class="fas fa-pencil-alt"></i></button>
-            </div>
           </div>
-          <hr>
+
+          <div class="actions">
+            <a href="#" class="btn btn-light btn-circle shadow-sm mt-3" data-toggle="modal"
+              data-target="#assignGuide"><i class="fas fa-chalkboard-teacher" data-toggle="tooltip" data-placement="top"
+                title="Assign guide"></i></a>
+            <button class="btn btn-light btn-circle shadow-sm mt-3 ml-2" data-toggle="tooltip" data-placement="top"
+              title="Edit"><i class="fas fa-pencil-alt"></i></button>
+          </div>
         </div>
+        <hr>
+      </div>
 
-        <div class="col-md-6">
-          <div class="project-card d-flex justify-content-between py-2">
-
-            <div class="description">
-              <h5 class="text-primary">Group 2</h5>
-              <div>Project - <a href="#">Handwriting Recognition </a></div>
-              <div class="meta d-flex justify-content-between align-items-center">
-                <div class="mt-3">
-                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                    data-placement="top" title="Project guide - Shilpa" class="team-member rounded-circle shadow-sm">
-                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                    data-placement="top" title="Shilpa" class="team-member rounded-circle shadow-sm">
-                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                    data-placement="top" title="Varun" class="team-member rounded-circle shadow-sm">
-                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                    data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
-                  <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                    data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
-                </div>
-                <!-- <div>Guide alloted - <a href="#">Varun Umesh </a></div> -->
+      <div class="col-md-6">
+        <div class="project-card d-flex justify-content-between py-2">
+          <div class="description">
+            <h5 class="text-primary">Group 2</h5>
+            <div>Project - <a href="#">Handwriting Recognition </a></div>
+            <div class="team d-flex justify-content-between align-items-center">
+              <div class="mt-3">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Project guide - Shilpa" class="team-member rounded-circle shadow-sm">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Shilpa" class="team-member rounded-circle shadow-sm">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Varun" class="team-member rounded-circle shadow-sm">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
               </div>
             </div>
-
-            <div class="actions ml-5">
-              <button class="btn btn-light btn-circle shadow-sm mt-3 ml-2" data-toggle="tooltip" data-placement="top"
-                title="Edit"><i class="fas fa-pencil-alt"></i></button>
-            </div>
           </div>
-          <hr>
+
+          <div class="actions">
+            <button class="btn btn-light btn-circle shadow-sm mt-3" data-toggle="tooltip" data-placement="top"
+              title="Edit"><i class="fas fa-pencil-alt"></i></button>
+          </div>
         </div>
+        <hr>
+      </div>
 
-        <div class="col-md-6">
-            <div class="project-card d-flex justify-content-between py-2">
-
-              <div class="description">
-                <h5 class="text-primary">Group 2</h5>
-                <div>Project - <a href="#">Handwriting Recognition </a></div>
-                <div class="meta d-flex justify-content-between align-items-center">
-                  <div class="mt-3">
-                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                      data-placement="top" title="Project guide - Shilpa" class="team-member rounded-circle shadow-sm">
-                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                      data-placement="top" title="Shilpa" class="team-member rounded-circle shadow-sm">
-                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                      data-placement="top" title="Varun" class="team-member rounded-circle shadow-sm">
-                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                      data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
-                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                      data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
-                  </div>
-                  <!-- <div>Guide alloted - <a href="#">Varun Umesh </a></div> -->
-                </div>
-              </div>
-
-              <div class="actions ml-5">
-                <button class="btn btn-light btn-circle shadow-sm mt-3 ml-2" data-toggle="tooltip" data-placement="top"
-                  title="Edit"><i class="fas fa-pencil-alt"></i></button>
+      <div class="col-md-6">
+        <div class="project-card d-flex justify-content-between py-2">
+          <div class="description">
+            <h5 class="text-primary">Group 2</h5>
+            <div>Project - <a href="#">Handwriting Recognition </a></div>
+            <div class="team d-flex justify-content-between align-items-center">
+              <div class="mt-3">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Project guide - Shilpa" class="team-member rounded-circle shadow-sm">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Shilpa" class="team-member rounded-circle shadow-sm">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Varun" class="team-member rounded-circle shadow-sm">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
               </div>
             </div>
-            <hr>
           </div>
 
-        <div class="col-md-6">
-            <div class="project-card d-flex justify-content-between py-2">
+          <div class="actions">
+            <button class="btn btn-light btn-circle shadow-sm mt-3" data-toggle="tooltip" data-placement="top"
+              title="Edit"><i class="fas fa-pencil-alt"></i></button>
+          </div>
+        </div>
+        <hr>
+      </div>
 
-              <div class="description">
-                <h5 class="text-primary">Group 2</h5>
-                <div>Project - <a href="#">Handwriting Recognition </a></div>
-                <div class="meta d-flex justify-content-between align-items-center">
-                  <div class="mt-3">
-                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                      data-placement="top" title="Project guide - Shilpa" class="team-member rounded-circle shadow-sm">
-                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                      data-placement="top" title="Shilpa" class="team-member rounded-circle shadow-sm">
-                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                      data-placement="top" title="Varun" class="team-member rounded-circle shadow-sm">
-                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                      data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
-                    <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
-                      data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
-                  </div>
-                  <!-- <div>Guide alloted - <a href="#">Varun Umesh </a></div> -->
-                </div>
-              </div>
-
-              <div class="actions ml-5">
-                <button class="btn btn-light btn-circle shadow-sm mt-3 ml-2" data-toggle="tooltip" data-placement="top"
-                  title="Edit"><i class="fas fa-pencil-alt"></i></button>
+      <div class="col-md-6">
+        <div class="project-card d-flex justify-content-between py-2">
+          <div class="description">
+            <h5 class="text-primary">Group 2</h5>
+            <div>Project - <a href="#">Handwriting Recognition </a></div>
+            <div class="team d-flex justify-content-between align-items-center">
+              <div class="mt-3">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Project guide - Shilpa" class="team-member rounded-circle shadow-sm">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Shilpa" class="team-member rounded-circle shadow-sm">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Varun" class="team-member rounded-circle shadow-sm">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
+                <img src="http://lorempixel.com/50/50/people/" alt="Team member" data-toggle="tooltip"
+                  data-placement="top" title="Kruthi" class="team-member rounded-circle shadow-sm">
               </div>
             </div>
-            <hr>
           </div>
-  </div>
 
+          <div class="actions">
+            <button class="btn btn-light btn-circle shadow-sm mt-3" data-toggle="tooltip" data-placement="top"
+              title="Edit"><i class="fas fa-pencil-alt"></i></button>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
   </section>
-
   <!-- Project Modal -->
   <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel"
     aria-hidden="true">
@@ -211,7 +210,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="submit" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
@@ -243,7 +242,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="submit" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
@@ -251,8 +250,7 @@
   <!-- End allot guide -->
 
   <!-- Add group Modal -->
-  <div class="modal fade" id="addGroup" tabindex="-1" role="dialog" aria-labelledby="addGrouplLabel"
-    aria-hidden="true">
+  <div class="modal fade" id="addGroup" tabindex="-1" role="dialog" aria-labelledby="addGrouplLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -274,14 +272,12 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="submit" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
   </div>
   <!-- End add group guide -->
-
-  </div>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
     (function (b, o, i, l, e, r) {
